@@ -8,7 +8,6 @@
 import UIKit
 
 extension UIViewController {
-    
     var router: Router {
         Router(viewController: self)
     }

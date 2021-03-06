@@ -21,4 +21,3 @@ class ModuleFactoryImpl: ModuleFactory {
         return (controller, presenter)
     }
 }
-

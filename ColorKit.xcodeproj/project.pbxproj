@@ -284,6 +284,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE83995C25F2745900847B0C /* Build configuration list for PBXNativeTarget "ColorKit" */;
 			buildPhases = (
+				DEC387FD25F3DC5B001DD684 /* Run Script */,
 				94449EA993A63CA2968AA390 /* [CP] Check Pods Manifest.lock */,
 				DE83994425F2745700847B0C /* Sources */,
 				DE83994525F2745700847B0C /* Frameworks */,
@@ -382,6 +383,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ColorKit/Pods-ColorKit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		DEC387FD25F3DC5B001DD684 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
