@@ -8,6 +8,7 @@
 import UIKit
 
 extension UIViewController {
+    
     var router: Router {
         Router(viewController: self)
     }
@@ -25,17 +26,43 @@ struct Router {
         self.viewController = viewController
     }
     
-    func push(animated: Bool = true, _ make: @escaping () -> UIViewController) -> (() -> Void) {
+    // MARK: - Transitions
+    
+    typealias Handler = () -> Void
+    typealias InputHandler<Input> = (Input) -> Void
+    typealias ControllerHandler = () -> UIViewController
+    typealias InputControllerHandler<Input> = (Input) -> UIViewController
+    
+    // MARK: - Push
+    
+    func push(animated: Bool = true, _ make: @escaping ControllerHandler) -> Handler {
         return {
             let controller = make()
             navigationController?.pushViewController(controller, animated: animated)
         }
     }
     
-    func push<Input>(animated: Bool = true, _ make: @escaping (Input) -> UIViewController) -> ((Input) -> Void) {
+    func push<InputType>(animated: Bool = true, _ make: @escaping InputControllerHandler<InputType>) -> InputHandler<InputType> {
         return { input in
             let controller = make(input)
             navigationController?.pushViewController(controller, animated: animated)
+        }
+    }
+    
+    // MARK: - Present
+    
+    func present(animated: Bool = true, _ make: @escaping ControllerHandler, completion: Handler? = nil) -> Handler {
+        return {
+            let controller = make()
+            self.viewController.present(controller, animated: animated)
+            
+        }
+    }
+    
+    func present<InputType>(animated: Bool = true, _ make: @escaping InputControllerHandler<InputType>, completion: Handler? = nil) -> InputHandler<InputType> {
+        return { input in
+            let controller = make(input)
+            self.viewController.present(controller, animated: animated, completion: completion)
         }
     }
 }
