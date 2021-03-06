@@ -10,10 +10,20 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    lazy var rootManager = RootManager(window: UIWindow())
+    let dependendencies: Dependencies = DependenciesImpl()
+    
+    var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        let flowFactory = dependendencies.flowFactory
+        let (viewController, _) = flowFactory.main()
+        
+        let window = UIWindow()
+        window.rootViewController = viewController
+        self.window = window
+        
+        window.makeKeyAndVisible()
         return true
     }
 }
-
