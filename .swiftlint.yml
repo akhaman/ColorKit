@@ -1,4 +1,9 @@
-
+line_length:
+  ignores_comments: true
+  ignores_urls: true
+  ignores_function_declarations: true
+  warning: 145
+  error: 200
 disabled_rules:
   - trailing_whitespace
 excluded:

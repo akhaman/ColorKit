@@ -173,7 +173,6 @@
 		DEE1E02B25F27FE400B0129B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DEE1E03925F38EAB00B0129B /* SizeAnimatableView.swift */,
 				DEE1E02C25F27FF600B0129B /* Array.swift */,
 				DEE1E03025F2800300B0129B /* CollectionView.swift */,
 			);
@@ -273,6 +272,7 @@
 		DEF549CE25F3C8C900E47918 /* CommonViews */ = {
 			isa = PBXGroup;
 			children = (
+				DEE1E03925F38EAB00B0129B /* SizeAnimatableView.swift */,
 			);
 			path = CommonViews;
 			sourceTree = "<group>";

@@ -14,7 +14,12 @@ protocol SizeAnimatableView: UIView {
 extension SizeAnimatableView {
     func resize(isHighlighted: Bool) {
         let transform: CGAffineTransform = isHighlighted ? .init(scaleX: 0.9, y: 0.9) : .identity
-        UIView.animate(withDuration: 0.4, delay: 0, options: [.allowUserInteraction, .curveEaseInOut, .beginFromCurrentState]) {
+       
+        UIView.animate(
+            withDuration: 0.4,
+            delay: 0,
+            options: [.allowUserInteraction, .curveEaseInOut, .beginFromCurrentState]
+        ) {
             self.transform = transform
         }
     }
