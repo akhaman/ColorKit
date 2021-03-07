@@ -9,4 +9,5 @@ import UIKit
 
 protocol ModuleFactory {
     func photoLibrary() -> (UIViewController, PhotoLibraryModule)
+    func detaledPhoto(photo: UIImage) -> (UIViewController, DetaledPhotoModule)
 }

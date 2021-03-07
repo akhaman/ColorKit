@@ -42,6 +42,8 @@ class MainFlowCoordinator: Coordinator<FlowNavigationController>, MainFlow {
     }
     
     private func detailedPhoto(photo: UIImage) -> UIViewController {
-        return UIViewController()
+        let (viewController, _) = modules.detaledPhoto(photo: photo)
+        
+        return viewController
     }
 }

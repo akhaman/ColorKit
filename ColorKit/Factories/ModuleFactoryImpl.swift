@@ -20,4 +20,10 @@ class ModuleFactoryImpl: ModuleFactory {
         let presenter = PhotoLibraryPresenterImpl(photoRepository: dependencies.photoRepository, view: controller)
         return (controller, presenter)
     }
+    
+    func detaledPhoto(photo: UIImage) -> (UIViewController, DetaledPhotoModule) {
+        let controller = DetaledPhotoViewImpl()
+        let presenter = DetaledPhotoPresenterImpl(photo: photo, view: controller)
+        return (controller, presenter)
+    }
 }
