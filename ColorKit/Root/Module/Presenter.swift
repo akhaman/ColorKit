@@ -7,11 +7,12 @@
 
 import Foundation
 
-class Presenter<V: View> {
+class Presenter<V: View>: NSObject {
     
-    private weak var view: V?
+    weak var view: V?
     
     init(view: V) {
+        super.init()
         guard let presenter = self as? V.PresenterType else {
             fatalError("Type of Presenter is wrong")
         }

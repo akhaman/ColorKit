@@ -8,11 +8,17 @@
 import UIKit
 
 protocol PhotoLibraryModule: class {
-    var didComplete: ((_ photo: UIImage) -> Void)? { get set }
+    var addPhoto: ((_ delegate: UIImagePickerControllerDelegate & UINavigationControllerDelegate) -> Void)? { get set }
+    var openPhoto: ((_ photo: UIImage) -> Void)? { get set }
 }
 
 protocol PhotoLibraryView: View {
+    func replace(items: [PhotoLibraryItem])
+    func append(items: [PhotoLibraryItem])
 }
 
 protocol PhotoLibraryPresenter: class {
+    func viewIsReady()
+    func addPhotoTapped()
+    func photoPreviewTapped(photo: UIImage)
 }

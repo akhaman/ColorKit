@@ -7,11 +7,12 @@
 
 import Foundation
 
-class Coordinator<View>: Flow where View: FlowHolder {
+class Coordinator<View>: NSObject, Flow where View: FlowHolder {
     
     weak var view: View?
     
     init(view: View) {
+        super.init()
         self.view = view
         view.flow = self
     }

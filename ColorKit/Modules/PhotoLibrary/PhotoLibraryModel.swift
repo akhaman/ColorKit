@@ -7,11 +7,12 @@
 
 import UIKit
 
-struct PhotoPreview {
-    
+enum PhotoLibraryItem {
+    case photoPreview(photo: UIImage)
+    case addPhoto
 }
 
-enum PhotoLibraryItem {
-    case photoPreview
-    case addPhoto
+struct PhotoPreview {
+    let name: String
+    let image: UIImage
 }

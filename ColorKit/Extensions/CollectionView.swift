@@ -14,7 +14,7 @@ extension UICollectionView {
         }
     }
     
-    func deque<Cell>(as cellType: Cell.Type, for indexPath: IndexPath) -> Cell? where Cell: UICollectionViewCell {
+    func cell<Cell>(ofType cellType: Cell.Type, for indexPath: IndexPath) -> Cell? where Cell: UICollectionViewCell {
         dequeueReusableCell(withReuseIdentifier: "\(cellType)", for: indexPath) as? Cell
     }
 }

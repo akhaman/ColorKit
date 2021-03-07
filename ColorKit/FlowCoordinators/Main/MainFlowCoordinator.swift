@@ -28,8 +28,17 @@ class MainFlowCoordinator: Coordinator<FlowNavigationController>, MainFlow {
     
     private func photoLibrary() -> UIViewController {
         let (viewController, module) = modules.photoLibrary()
-        module.didComplete = viewController.router.push(self.detailedPhoto)
+        module.addPhoto = viewController.router.present(imagePicker)
+        module.openPhoto = viewController.router.push(detailedPhoto)
+        
         return viewController
+    }
+    
+    private func imagePicker(delegate: UIImagePickerControllerDelegate & UINavigationControllerDelegate) -> UIViewController {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = delegate
+        
+        return imagePickerController
     }
     
     private func detailedPhoto(photo: UIImage) -> UIViewController {
