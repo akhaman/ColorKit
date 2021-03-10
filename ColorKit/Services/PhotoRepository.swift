@@ -8,5 +8,5 @@
 import UIKit
 
 protocol PhotoRepository {
-    func obtainStoredPhotos(completion: @escaping ([UIImage]) -> Void)
+    func obtainStoredPhotos(completion: @escaping (_ images: [UIImage]) -> Void)
 }
