@@ -23,7 +23,7 @@ class ModuleFactoryImpl: ModuleFactory {
     }
     
     func detaledPhoto(photo: UIImage) -> (UIViewController, DetaledPhotoModule) {
-        let controller = DetaledPhotoViewImpl()
+        let controller = DetaledPhotoViewMetalImpl()
         let presenter = DetaledPhotoPresenterImpl(photo: photo, view: controller)
         
         return (controller, presenter)

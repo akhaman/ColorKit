@@ -43,6 +43,7 @@
 		DEECF61325F3B35C00001569 /* ModuleFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECF61225F3B35C00001569 /* ModuleFactoryImpl.swift */; };
 		DEECF61625F3B3E800001569 /* PhotoLibraryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECF61525F3B3E800001569 /* PhotoLibraryModule.swift */; };
 		DEECF61925F3B6D700001569 /* PhotoLibraryPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECF61825F3B6D700001569 /* PhotoLibraryPresenterImpl.swift */; };
+		DEF0C34925FA51B800799792 /* DetaledPhotoViewMetalImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C34825FA51B800799792 /* DetaledPhotoViewMetalImpl.swift */; };
 		DEF549BA25F3BBEC00E47918 /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF549B925F3BBEC00E47918 /* MainFlow.swift */; };
 		DEF549BE25F3BC3900E47918 /* MainFlowNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF549BD25F3BC3900E47918 /* MainFlowNavigationController.swift */; };
 		DEF549C125F3BC7B00E47918 /* MainFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF549C025F3BC7B00E47918 /* MainFlowCoordinator.swift */; };
@@ -90,6 +91,7 @@
 		DEECF61225F3B35C00001569 /* ModuleFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactoryImpl.swift; sourceTree = "<group>"; };
 		DEECF61525F3B3E800001569 /* PhotoLibraryModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryModule.swift; sourceTree = "<group>"; };
 		DEECF61825F3B6D700001569 /* PhotoLibraryPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPresenterImpl.swift; sourceTree = "<group>"; };
+		DEF0C34825FA51B800799792 /* DetaledPhotoViewMetalImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaledPhotoViewMetalImpl.swift; sourceTree = "<group>"; };
 		DEF549B925F3BBEC00E47918 /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
 		DEF549BD25F3BC3900E47918 /* MainFlowNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowNavigationController.swift; sourceTree = "<group>"; };
 		DEF549C025F3BC7B00E47918 /* MainFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinator.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				DEDF3D8525F4B84600F3A34F /* DetaledPhotoModule.swift */,
 				DEDF3D8A25F4B86D00F3A34F /* DetaledPhotoViewImpl.swift */,
 				DEDF3D8E25F4B88800F3A34F /* DetaledPhotoPresenterImpl.swift */,
+				DEF0C34825FA51B800799792 /* DetaledPhotoViewMetalImpl.swift */,
 			);
 			path = DetaledPhoto;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				DEECF60925F3B1C100001569 /* DependenciesImpl.swift in Sources */,
 				DEECF5FB25F3AF0600001569 /* FlowHolder.swift in Sources */,
 				DE83995025F2745700847B0C /* PhotoLibraryController.swift in Sources */,
+				DEF0C34925FA51B800799792 /* DetaledPhotoViewMetalImpl.swift in Sources */,
 				DEECF5EB25F3AA7100001569 /* View.swift in Sources */,
 				DEDF3D7725F4216900F3A34F /* Optional.swift in Sources */,
 				DE83997825F27E1F00847B0C /* PhotoLibraryModel.swift in Sources */,
