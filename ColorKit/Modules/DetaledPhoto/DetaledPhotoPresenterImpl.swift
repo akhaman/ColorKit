@@ -40,5 +40,6 @@ extension DetaledPhotoPresenterImpl: DetaledPhotoPresenter {
     }
     
     func viewIsReady() {
+        view?.showPhoto(photo: photo)
     }
 }

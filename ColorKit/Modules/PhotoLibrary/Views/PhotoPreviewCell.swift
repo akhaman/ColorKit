@@ -14,7 +14,7 @@ class PhotoPreviewCell: UICollectionViewCell, Fillable, SizeAnimatableView {
     
     private lazy var imageView: UIImageView = {
         let view = UIImageView()
-        view.translatesAutoresizingMaskIntoConstraints = false
+        view.contentMode = .scaleAspectFill
         return view
     }()
     
@@ -55,13 +55,7 @@ class PhotoPreviewCell: UICollectionViewCell, Fillable, SizeAnimatableView {
     private func setupView() {
         contentView.addSubview(imageView)
         
-        imageView.snp.makeConstraints { maker in
-            maker.top.equalToSuperview()
-            maker.left.equalToSuperview()
-            maker.right.equalToSuperview()
-            maker.bottom.equalToSuperview()
-        }
+        imageView.snp.makeConstraints { $0.edges.equalToSuperview().inset(20) }
         
-        imageView.layer.cornerRadius = 5
     }
 }
