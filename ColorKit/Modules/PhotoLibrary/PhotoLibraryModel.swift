@@ -8,7 +8,7 @@
 import UIKit
 
 enum PhotoLibraryItem {
-    case photoPreview(photo: UIImage)
+    case photoModel(model: PhotoModel)
     case addPhoto
 }
 

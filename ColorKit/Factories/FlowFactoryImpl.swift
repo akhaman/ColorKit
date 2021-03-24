@@ -16,8 +16,8 @@ class FlowFactoryImpl: FlowFactory {
     }
     
     func main() -> (UIViewController, MainFlow) {
-        let controller = MainFlowNavigationController()
-        let flow = MainFlowCoordinator(view: controller, flows: dependencies.flowFactory, modules: dependencies.moduleFactory)
-        return (controller, flow)
+        let navigationController = MainFlowNavigationController()
+        let flow = MainFlowCoordinator(view: navigationController, flows: dependencies.flowFactory, modules: dependencies.moduleFactory)
+        return (navigationController, flow)
     }
 }

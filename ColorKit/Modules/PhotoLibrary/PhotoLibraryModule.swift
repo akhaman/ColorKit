@@ -8,7 +8,7 @@
 import UIKit
 
 protocol PhotoLibraryModule: class {
-    var addPhoto: ((_ delegate: UIImagePickerControllerDelegate & UINavigationControllerDelegate) -> Void)? { get set }
+    var addPhoto: ((_ delegate: PickerDelegate) -> Void)? { get set }
     var openPhoto: ((_ photo: UIImage) -> Void)? { get set }
 }
 

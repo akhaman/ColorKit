@@ -87,9 +87,10 @@ extension PhotoLibraryController: UICollectionViewDataSource {
         case .addPhoto:
             cell = collectionView.cell(ofType: PhotoPreviewCell.self, for: indexPath)?
                 .filled(with: Images.addPhoto)
-        case .photoPreview(let photo):
-            cell = collectionView.cell(ofType: PhotoPreviewCell.self, for: indexPath)?
-                .filled(with: photo)
+        case .photoModel(let photo):
+            break
+//            cell = collectionView.cell(ofType: PhotoPreviewCell.self, for: indexPath)?
+//                .filled(with: )
         }
 
         return cell ?? UICollectionViewCell()
@@ -106,8 +107,9 @@ extension PhotoLibraryController: UICollectionViewDelegate {
         switch item {
         case .addPhoto:
             presenter?.addPhotoTapped()
-        case .photoPreview(let photo):
-            presenter?.photoPreviewTapped(photo: photo)
+        case .photoModel(let photo):
+            break
+//            presenter?.photoPreviewTapped(photo: photo)
         }
     }
 }

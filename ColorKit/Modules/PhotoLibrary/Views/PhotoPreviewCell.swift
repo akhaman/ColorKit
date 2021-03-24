@@ -20,7 +20,9 @@ class PhotoPreviewCell: UICollectionViewCell, Fillable, SizeAnimatableView {
     
     // MARK: - Utils
     
-    private var photo: UIImage?
+    var photo: UIImage?
+    
+    var representedIdentifier: String?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,7 +31,7 @@ class PhotoPreviewCell: UICollectionViewCell, Fillable, SizeAnimatableView {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        imageView.image.clear()
+        imageView.image = nil
     }
     
     required init?(coder: NSCoder) {
@@ -54,8 +56,6 @@ class PhotoPreviewCell: UICollectionViewCell, Fillable, SizeAnimatableView {
     
     private func setupView() {
         contentView.addSubview(imageView)
-        
         imageView.snp.makeConstraints { $0.edges.equalToSuperview().inset(20) }
-        
     }
 }

@@ -6,32 +6,30 @@
 //
 
 import UIKit
+import Photos
 
-class PhotoLibraryPresenterImpl<V: PhotoLibraryView>: Presenter<V>,
-                                                      PhotoLibraryModule,
-                                                      UIImagePickerControllerDelegate,
-                                                      UINavigationControllerDelegate {
+class PhotoLibraryPresenterImpl<V: PhotoLibraryView>: Presenter<V>, PhotoLibraryModule {
     // MARK: - Implementation
     
     let photoRepository: PhotoRepository
     
+    private let pickerHandler = ImagePickerDelegate()
+    
     init(photoRepository: PhotoRepository, view: V) {
         self.photoRepository = photoRepository
         super.init(view: view)
+        
+        pickerHandler.gotAssets = { image in
+            
+            
+        }
     }
+    
     // MARK: - PhotoLibraryModule
     
-    var addPhoto: ((_ delegate: UIImagePickerControllerDelegate & UINavigationControllerDelegate) -> Void)?
+    var addPhoto: ((_ delegate: PickerDelegate) -> Void)?
+    
     var openPhoto: ((_ photo: UIImage) -> Void)?
-    
-    // MARK: - UIImagePickerControllerDelegate
-    
-    func imagePickerController(_ picker: UIImagePickerController,
-                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        picker.dismiss(animated: true, completion: nil)
-        guard let image = info[.originalImage] as? UIImage else { return }
-        view?.append(items: [.photoPreview(photo: image)])
-    }
 }
 
 // MARK: - PhotoLibraryPresenter
@@ -46,13 +44,13 @@ extension PhotoLibraryPresenterImpl: PhotoLibraryPresenter {
                 return
             }
             
-            let items = photos.map { PhotoLibraryItem.photoPreview(photo: $0) }
+            let items = photos.map { PhotoLibraryItem.photoModel(model: $0) }
             self.view?.replace(items: items)
         }
     }
     
     func addPhotoTapped() {
-        addPhoto?(self)
+        addPhoto?(pickerHandler)
     }
     
     func photoPreviewTapped(photo: UIImage) {

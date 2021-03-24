@@ -2,10 +2,10 @@
 //  MainFlowNavigationController.swift
 //  ColorKit
 //
-//  Created by Руслан Ахмадеев on 06.03.2021.
+//  Created by user on 24.03.2021.
 //
 
-import Foundation
+import UIKit
 
 class MainFlowNavigationController: FlowNavigationController {
 }

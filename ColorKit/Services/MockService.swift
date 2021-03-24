@@ -10,7 +10,11 @@ import UIKit
 class MockService {}
 
 extension MockService: PhotoRepository {
-    func obtainStoredPhotos(completion: @escaping ([UIImage]) -> Void) {
+    func obtainStoredPhotos(completion: @escaping ([PhotoModel]) -> Void) {
         completion([])
+    }
+    
+    func savePhotos(photos: [PhotoModel]) {
+        
     }
 }

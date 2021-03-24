@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import Photos
+
+typealias PickerDelegate = UIImagePickerControllerDelegate & UINavigationControllerDelegate
 
 class MainFlowCoordinator: Coordinator<FlowNavigationController>, MainFlow {
     
@@ -34,10 +37,10 @@ class MainFlowCoordinator: Coordinator<FlowNavigationController>, MainFlow {
         return viewController
     }
     
-    private func imagePicker(delegate: UIImagePickerControllerDelegate & UINavigationControllerDelegate) -> UIViewController {
+    private func imagePicker(delegate: PickerDelegate) -> UIViewController {
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = delegate
-        
+            
         return imagePickerController
     }
     

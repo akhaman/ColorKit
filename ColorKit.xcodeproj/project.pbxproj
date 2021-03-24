@@ -8,23 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		B533A3971AC9B91BD8A5405A /* Pods_ColorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BD20C9CBDAEDC19A0D8BD9 /* Pods_ColorKit.framework */; };
-		DE766D9025F8C5E400AA5408 /* GraphicContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE766D8F25F8C5E400AA5408 /* GraphicContext.swift */; };
+		CE5DF18E260B82B6001ECD92 /* MainFlowNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DF18D260B82B6001ECD92 /* MainFlowNavigationController.swift */; };
+		CE5DF199260B85D3001ECD92 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DF198260B85D3001ECD92 /* PhotoModel.swift */; };
 		DE766D9425F8C76100AA5408 /* Metal.metal in Sources */ = {isa = PBXBuildFile; fileRef = DE766D9325F8C76100AA5408 /* Metal.metal */; };
-		DE766D9825F8E46D00AA5408 /* SomeMetalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE766D9725F8E46D00AA5408 /* SomeMetalService.swift */; };
 		DE83994C25F2745700847B0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83994B25F2745700847B0C /* AppDelegate.swift */; };
 		DE83995025F2745700847B0C /* PhotoLibraryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83994F25F2745700847B0C /* PhotoLibraryController.swift */; };
 		DE83995525F2745900847B0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE83995425F2745900847B0C /* Assets.xcassets */; };
 		DE83995825F2745900847B0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE83995625F2745900847B0C /* LaunchScreen.storyboard */; };
 		DE83997825F27E1F00847B0C /* PhotoLibraryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83997725F27E1F00847B0C /* PhotoLibraryModel.swift */; };
+		DE8A30B726010AC8000A008A /* ImagePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8A30B626010AC8000A008A /* ImagePickerDelegate.swift */; };
+		DEA7F9B82602852A00536F71 /* LibraryViewImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA7F9B72602852A00536F71 /* LibraryViewImpl.swift */; };
 		DEDA562E25F4CDC1001CF2B9 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA562D25F4CDC1001CF2B9 /* UIImage.swift */; };
 		DEDF3D6B25F41A0500F3A34F /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDF3D6A25F41A0500F3A34F /* Images.swift */; };
 		DEDF3D6E25F41A7500F3A34F /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDF3D6D25F41A7500F3A34F /* Localization.swift */; };
 		DEDF3D7125F41D5000F3A34F /* Fillable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDF3D7025F41D5000F3A34F /* Fillable.swift */; };
-		DEDF3D7725F4216900F3A34F /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDF3D7625F4216900F3A34F /* Optional.swift */; };
 		DEDF3D7B25F4B1B700F3A34F /* PhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDF3D7A25F4B1B700F3A34F /* PhotoRepository.swift */; };
 		DEDF3D7E25F4B20300F3A34F /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDF3D7D25F4B20300F3A34F /* MockService.swift */; };
 		DEDF3D8625F4B84600F3A34F /* DetaledPhotoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDF3D8525F4B84600F3A34F /* DetaledPhotoModule.swift */; };
-		DEDF3D8B25F4B86D00F3A34F /* DetaledPhotoViewImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDF3D8A25F4B86D00F3A34F /* DetaledPhotoViewImpl.swift */; };
 		DEDF3D8F25F4B88800F3A34F /* DetaledPhotoPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDF3D8E25F4B88800F3A34F /* DetaledPhotoPresenterImpl.swift */; };
 		DEE1E02825F27FA100B0129B /* PhotoPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE1E02725F27FA100B0129B /* PhotoPreviewCell.swift */; };
 		DEE1E02D25F27FF600B0129B /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE1E02C25F27FF600B0129B /* Array.swift */; };
@@ -44,8 +44,8 @@
 		DEECF61625F3B3E800001569 /* PhotoLibraryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECF61525F3B3E800001569 /* PhotoLibraryModule.swift */; };
 		DEECF61925F3B6D700001569 /* PhotoLibraryPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECF61825F3B6D700001569 /* PhotoLibraryPresenterImpl.swift */; };
 		DEF0C34925FA51B800799792 /* DetaledPhotoViewMetalImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C34825FA51B800799792 /* DetaledPhotoViewMetalImpl.swift */; };
+		DEF18EA825FBE7D50044E097 /* MetalFilters.metal in Sources */ = {isa = PBXBuildFile; fileRef = DEF18EA725FBE7D50044E097 /* MetalFilters.metal */; };
 		DEF549BA25F3BBEC00E47918 /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF549B925F3BBEC00E47918 /* MainFlow.swift */; };
-		DEF549BE25F3BC3900E47918 /* MainFlowNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF549BD25F3BC3900E47918 /* MainFlowNavigationController.swift */; };
 		DEF549C125F3BC7B00E47918 /* MainFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF549C025F3BC7B00E47918 /* MainFlowCoordinator.swift */; };
 		DEF549C425F3BCE000E47918 /* FlowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF549C325F3BCE000E47918 /* FlowFactory.swift */; };
 		DEF549C725F3BCFA00E47918 /* FlowFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF549C625F3BCFA00E47918 /* FlowFactoryImpl.swift */; };
@@ -54,9 +54,9 @@
 /* Begin PBXFileReference section */
 		56BD20C9CBDAEDC19A0D8BD9 /* Pods_ColorKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DE62A7FCC5CBFA86E938296 /* Pods-ColorKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorKit.debug.xcconfig"; path = "Target Support Files/Pods-ColorKit/Pods-ColorKit.debug.xcconfig"; sourceTree = "<group>"; };
-		DE766D8F25F8C5E400AA5408 /* GraphicContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicContext.swift; sourceTree = "<group>"; };
+		CE5DF18D260B82B6001ECD92 /* MainFlowNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowNavigationController.swift; sourceTree = "<group>"; };
+		CE5DF198260B85D3001ECD92 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		DE766D9325F8C76100AA5408 /* Metal.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Metal.metal; sourceTree = "<group>"; };
-		DE766D9725F8E46D00AA5408 /* SomeMetalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeMetalService.swift; sourceTree = "<group>"; };
 		DE83994825F2745700847B0C /* ColorKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE83994B25F2745700847B0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE83994F25F2745700847B0C /* PhotoLibraryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryController.swift; sourceTree = "<group>"; };
@@ -64,15 +64,15 @@
 		DE83995725F2745900847B0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE83995925F2745900847B0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE83997725F27E1F00847B0C /* PhotoLibraryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryModel.swift; sourceTree = "<group>"; };
+		DE8A30B626010AC8000A008A /* ImagePickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerDelegate.swift; sourceTree = "<group>"; };
+		DEA7F9B72602852A00536F71 /* LibraryViewImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewImpl.swift; sourceTree = "<group>"; };
 		DEDA562D25F4CDC1001CF2B9 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		DEDF3D6A25F41A0500F3A34F /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		DEDF3D6D25F41A7500F3A34F /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		DEDF3D7025F41D5000F3A34F /* Fillable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fillable.swift; sourceTree = "<group>"; };
-		DEDF3D7625F4216900F3A34F /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		DEDF3D7A25F4B1B700F3A34F /* PhotoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRepository.swift; sourceTree = "<group>"; };
 		DEDF3D7D25F4B20300F3A34F /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
 		DEDF3D8525F4B84600F3A34F /* DetaledPhotoModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaledPhotoModule.swift; sourceTree = "<group>"; };
-		DEDF3D8A25F4B86D00F3A34F /* DetaledPhotoViewImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaledPhotoViewImpl.swift; sourceTree = "<group>"; };
 		DEDF3D8E25F4B88800F3A34F /* DetaledPhotoPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaledPhotoPresenterImpl.swift; sourceTree = "<group>"; };
 		DEE1E02725F27FA100B0129B /* PhotoPreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewCell.swift; sourceTree = "<group>"; };
 		DEE1E02C25F27FF600B0129B /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
@@ -92,8 +92,8 @@
 		DEECF61525F3B3E800001569 /* PhotoLibraryModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryModule.swift; sourceTree = "<group>"; };
 		DEECF61825F3B6D700001569 /* PhotoLibraryPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPresenterImpl.swift; sourceTree = "<group>"; };
 		DEF0C34825FA51B800799792 /* DetaledPhotoViewMetalImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaledPhotoViewMetalImpl.swift; sourceTree = "<group>"; };
+		DEF18EA725FBE7D50044E097 /* MetalFilters.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MetalFilters.metal; sourceTree = "<group>"; wrapsLines = 1; };
 		DEF549B925F3BBEC00E47918 /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
-		DEF549BD25F3BC3900E47918 /* MainFlowNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowNavigationController.swift; sourceTree = "<group>"; };
 		DEF549C025F3BC7B00E47918 /* MainFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinator.swift; sourceTree = "<group>"; };
 		DEF549C325F3BCE000E47918 /* FlowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowFactory.swift; sourceTree = "<group>"; };
 		DEF549C625F3BCFA00E47918 /* FlowFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowFactoryImpl.swift; sourceTree = "<group>"; };
@@ -132,9 +132,8 @@
 		DE766D9225F8C72E00AA5408 /* Metal */ = {
 			isa = PBXGroup;
 			children = (
-				DE766D8F25F8C5E400AA5408 /* GraphicContext.swift */,
 				DE766D9325F8C76100AA5408 /* Metal.metal */,
-				DE766D9725F8E46D00AA5408 /* SomeMetalService.swift */,
+				DEF18EA725FBE7D50044E097 /* MetalFilters.metal */,
 			);
 			path = Metal;
 			sourceTree = "<group>";
@@ -161,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				DE83996825F2762000847B0C /* Root */,
+				DE8A307B2600E7E9000A008A /* Persistence */,
 				DEECF60325F3B18900001569 /* Dependencies */,
 				DEECF60B25F3B21100001569 /* Modules */,
 				DEECF60D25F3B31500001569 /* Factories */,
@@ -197,11 +197,20 @@
 			path = PhotoLibrary;
 			sourceTree = "<group>";
 		};
+		DE8A307B2600E7E9000A008A /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				DEDF3D7A25F4B1B700F3A34F /* PhotoRepository.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
 		DEB5760C25F4179B00C9B7EF /* Impl */ = {
 			isa = PBXGroup;
 			children = (
 				DE83994F25F2745700847B0C /* PhotoLibraryController.swift */,
 				DEECF61825F3B6D700001569 /* PhotoLibraryPresenterImpl.swift */,
+				DEA7F9B72602852A00536F71 /* LibraryViewImpl.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -237,7 +246,6 @@
 			isa = PBXGroup;
 			children = (
 				DEDF3D8525F4B84600F3A34F /* DetaledPhotoModule.swift */,
-				DEDF3D8A25F4B86D00F3A34F /* DetaledPhotoViewImpl.swift */,
 				DEDF3D8E25F4B88800F3A34F /* DetaledPhotoPresenterImpl.swift */,
 				DEF0C34825FA51B800799792 /* DetaledPhotoViewMetalImpl.swift */,
 			);
@@ -249,7 +257,6 @@
 			children = (
 				DEE1E02C25F27FF600B0129B /* Array.swift */,
 				DEE1E03025F2800300B0129B /* CollectionView.swift */,
-				DEDF3D7625F4216900F3A34F /* Optional.swift */,
 				DEDA562D25F4CDC1001CF2B9 /* UIImage.swift */,
 			);
 			path = Extensions;
@@ -326,7 +333,7 @@
 			children = (
 				DEF549C025F3BC7B00E47918 /* MainFlowCoordinator.swift */,
 				DEF549B925F3BBEC00E47918 /* MainFlow.swift */,
-				DEF549BD25F3BC3900E47918 /* MainFlowNavigationController.swift */,
+				CE5DF18D260B82B6001ECD92 /* MainFlowNavigationController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -335,7 +342,6 @@
 			isa = PBXGroup;
 			children = (
 				DE766D9225F8C72E00AA5408 /* Metal */,
-				DEDF3D7A25F4B1B700F3A34F /* PhotoRepository.swift */,
 				DEDF3D7D25F4B20300F3A34F /* MockService.swift */,
 			);
 			path = Services;
@@ -344,6 +350,8 @@
 		DEF549CD25F3C8BB00E47918 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DE8A30B626010AC8000A008A /* ImagePickerDelegate.swift */,
+				CE5DF198260B85D3001ECD92 /* PhotoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -491,18 +499,21 @@
 				DEECF60525F3B1B000001569 /* Dependencies.swift in Sources */,
 				DEE1E03125F2800300B0129B /* CollectionView.swift in Sources */,
 				DE766D9425F8C76100AA5408 /* Metal.metal in Sources */,
-				DE766D9025F8C5E400AA5408 /* GraphicContext.swift in Sources */,
+				DEA7F9B82602852A00536F71 /* LibraryViewImpl.swift in Sources */,
 				DEDF3D6E25F41A7500F3A34F /* Localization.swift in Sources */,
 				DEECF61325F3B35C00001569 /* ModuleFactoryImpl.swift in Sources */,
+				CE5DF199260B85D3001ECD92 /* PhotoModel.swift in Sources */,
+				CE5DF18E260B82B6001ECD92 /* MainFlowNavigationController.swift in Sources */,
 				DEECF61625F3B3E800001569 /* PhotoLibraryModule.swift in Sources */,
 				DEDF3D6B25F41A0500F3A34F /* Images.swift in Sources */,
 				DEDA562E25F4CDC1001CF2B9 /* UIImage.swift in Sources */,
 				DEECF60925F3B1C100001569 /* DependenciesImpl.swift in Sources */,
+				DEF18EA825FBE7D50044E097 /* MetalFilters.metal in Sources */,
 				DEECF5FB25F3AF0600001569 /* FlowHolder.swift in Sources */,
 				DE83995025F2745700847B0C /* PhotoLibraryController.swift in Sources */,
 				DEF0C34925FA51B800799792 /* DetaledPhotoViewMetalImpl.swift in Sources */,
+				DE8A30B726010AC8000A008A /* ImagePickerDelegate.swift in Sources */,
 				DEECF5EB25F3AA7100001569 /* View.swift in Sources */,
-				DEDF3D7725F4216900F3A34F /* Optional.swift in Sources */,
 				DE83997825F27E1F00847B0C /* PhotoLibraryModel.swift in Sources */,
 				DEE1E02825F27FA100B0129B /* PhotoPreviewCell.swift in Sources */,
 				DEECF5F725F3AEE600001569 /* Flow.swift in Sources */,
@@ -517,12 +528,9 @@
 				DEF549BA25F3BBEC00E47918 /* MainFlow.swift in Sources */,
 				DEDF3D8625F4B84600F3A34F /* DetaledPhotoModule.swift in Sources */,
 				DEECF5F225F3ABB400001569 /* Router.swift in Sources */,
-				DEDF3D8B25F4B86D00F3A34F /* DetaledPhotoViewImpl.swift in Sources */,
 				DEECF61925F3B6D700001569 /* PhotoLibraryPresenterImpl.swift in Sources */,
 				DEDF3D7E25F4B20300F3A34F /* MockService.swift in Sources */,
 				DEECF5EF25F3AAB800001569 /* Presenter.swift in Sources */,
-				DEF549BE25F3BC3900E47918 /* MainFlowNavigationController.swift in Sources */,
-				DE766D9825F8E46D00AA5408 /* SomeMetalService.swift in Sources */,
 				DEF549C125F3BC7B00E47918 /* MainFlowCoordinator.swift in Sources */,
 				DE83994C25F2745700847B0C /* AppDelegate.swift in Sources */,
 				DEF549C725F3BCFA00E47918 /* FlowFactoryImpl.swift in Sources */,
